@@ -31,21 +31,30 @@ es verdadero si modulo =0
 
 
 
-let counter=1;
 
-do{
-    if(counter % 3 === 0 && counter % 5 === 0){
-   console.log(`El numero es ${counter} es FizzBuzz`);
-    }else if(counter %3===0){
-        console.log(`El numero es ${counter} es Fizz`);
-    }
-    else if(counter %5===0){
-        console.log(`El numero es ${counter} es Buzz`);
-    }else{
-        console.log(`${counter}`);
-    }
-    counter++;
-}while(counter<=100)
+/**tipo de funcion */
+const fizzbuzz = (counterNumber) => {
+    let counter = 1;
+    do {
+        if (counter % 3 === 0 && counter % 5 === 0) {
+            console.log(`El numero es ${counter} es FizzBuzz`);
+        } else if (counter % 3 === 0) {
+            console.log(`El numero es ${counter} es Fizz`);
+        }
+        else if (counter % 5 === 0) {
+            console.log(`El numero es ${counter} es Buzz`);
+        } else {
+            console.log(`${counter}`);
+        }
+        counter++;
+    } while (counter <= counterNumber)
+
+};
+let first=prompt("escribe el valor de numeros que quieres consultar:");
+console.log(`${first} veces`);
+fizzbuzz(first);
 
 
-    
+let second=prompt("escribe el valor de numeros que quieres consultar:");
+console.log(`${second} veces`);
+fizzbuzz(second);
