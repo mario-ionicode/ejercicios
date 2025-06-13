@@ -14,6 +14,22 @@ Example:
  */
 
 
+const usuariosOnline=[];
+for(i=1;i<=5;i++){
+    //back tics alt +96
+usuariosOnline.push(prompt(`ingresa el nombre de usuario ${i}`));
+
+
+
+    
+}
+
+const  [firstElement,secondElement,... online] =usuariosOnline;
+
+console.log(usuariosOnline);
+
+
+
 
 
 
