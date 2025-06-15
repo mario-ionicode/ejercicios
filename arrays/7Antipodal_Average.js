@@ -13,8 +13,5 @@ Given an array, return a shorter array following these steps:
 
 Example:
 - For the array `[1,2,3,5,22,6]`, the result should be `[3.5, 12, 4]`.
- * 
- * 
- * 
- * 
+ 
  */
